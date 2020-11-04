@@ -1,12 +1,27 @@
-import React from 'react';
-import Grade from './grade';
+import React, {useState} from 'react';
+
 
 function Main()
 {
-  return(
 
-<Grade name="Muhammad Abdullah" grd="A" status="Pass"/>
-);
+let [count,setCount]=useState(0) // hook initialize variable 
+
+return(
+  <div>
+<h1>Hello {count}</h1>
+<button onClick={
+  ()=>alert('Button Pressed')}>   
+  Updates Counter</button>
+    
+
+</div>
+);  //Ye Arrow function anamous hota ha with no name
 }
 
-export default Main; 
+
+export default Main; //agar default na lagown to import kay sat same name use karn
+
+//hoga
+
+//ak file main ak hi deafult export ho sakti ha
+
